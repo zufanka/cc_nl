@@ -7,7 +7,7 @@ def login(url):
   browser = mechanize.Browser()
   browser.open(url)
   
-  print [form for form in browser.forms()][0]
+  print [form for form in browser.forms()][1]
   
   browser.select_form(nr = 0)
   browser.form['url'] = "thisisnotarobot"
