@@ -5,7 +5,11 @@ url = "https://imgur.com/signin?minimal"
 
 browser = mechanize.Browser()
 browser.open(url)
-browser.select_form(id = "login")
+for form in br.forms():
+  if form.attrs['id'] == 'login'
+    browser.form = form
+    break
+# browser.select_form(id = "login")
 browser.form['username'] = "thisisnotarobot"
 browser.form['password'] = "lickmybattery"
 browser.submit()
