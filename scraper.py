@@ -5,7 +5,7 @@ url = "https://imgur.com/signin?minimal"
 
 browser = mechanize.Browser()
 browser.open(url)
-for form in br.forms():
+for form in browser.forms():
   if form.attrs['id'] == 'login':
     browser.form = form
     break
