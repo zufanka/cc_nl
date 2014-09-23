@@ -3,7 +3,7 @@ import mechanize
 
 url = "https://imgur.com/signin?minimal"
 
-def login(url)
+def login(url):
   browser = mechanize.Browser()
   browser.open(url)
   
