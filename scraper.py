@@ -10,8 +10,8 @@ def login(url):
   print [form for form in browser.forms()][0]
   
   browser.select_form(nr = 0)
-  browser.form['log'] = "thisisnotarobot"
-  browser.form['pwd'] = "lickmybattery"
+  browser.form['url'] = "thisisnotarobot"
+  browser.form['password'] = "lickmybattery"
   
   browser.submit()
 
