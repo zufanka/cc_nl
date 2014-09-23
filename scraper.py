@@ -10,6 +10,7 @@ for form in browser.forms():
     browser.form = form
     break
 # browser.select_form(id = "login")
+print browser.form
 browser.form['username'] = "thisisnotarobot"
 browser.form['password'] = "lickmybattery"
 browser.submit()
