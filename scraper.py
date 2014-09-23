@@ -3,13 +3,21 @@ import mechanize
 
 url = "https://imgur.com/signin?minimal"
 
-browser = mechanize.Browser()
-print browser.open(url)
+def login(url)
+  browser = mechanize.Browser()
+  browser.open(url)
+  
+  browser.select_form(nr = 0)
+  browser.form['username'] = "thisisnotarobot"
+  browser.form['password'] = "lickmybattery"
+  
+  browser.submit()
 
-browser.select_form(nr = 0)
-browser.form['username'] = "thisisnotarobot"
-browser.form['password'] = "lickmybattery"
-browser.submit()
+  for link in browser.links():
+    print link
+    
+login(url)
 
-for link in browser.links():\
-  print link
+#from jabbapylib.filesystem import fs
+#USERNAME = fs.read_first_line('/home/jabba/secret/project_euler/username.txt')
+#PASSWORD = fs.read_first_line('/home/jabba/secret/project_euler/password.txt')
