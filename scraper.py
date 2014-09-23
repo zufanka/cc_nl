@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup as BS
 import mechanize
 
-url = "http://sijeme.sk/wp-login.php"
+url = "https://imgur.com/signin?minimal"
 
 def login(url):
   browser = mechanize.Browser()
