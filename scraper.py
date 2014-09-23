@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup as BS
 import mechanize
 
-url = "https://diensten.kvk.nl/TST-BIN/RB/RBWWW90@"
+url = "nogods"
 
 def login(url):
   browser = mechanize.Browser()
