@@ -4,7 +4,7 @@ import mechanize
 url = "https://imgur.com/signin?minimal"
 
 browser = mechanize.Browser()
-browser.open(url)
+print browser.open(url)
 
 browser.select_form(nr = 0)
 browser.form['username'] = "thisisnotarobot"
