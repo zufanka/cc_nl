@@ -6,7 +6,7 @@ url = "https://imgur.com/signin?minimal"
 browser = mechanize.Browser()
 browser.open(url)
 
-browser.select_form(nr = 1)
+browser.select_form(nr = 0)
 browser.form['username'] = "thisisnotarobot"
 browser.form['password'] = "lickmybattery"
 browser.submit()
